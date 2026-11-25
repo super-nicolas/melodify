@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+
+    background-image: url(https://previews.123rf.com/images/terriana/terriana1509/terriana150900091/44974438-music-notes-and-elements-seamless-pattern-musical-tiling-background-music-style-textured-wallpaper.jpg);
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+.encabezado {
+    background: #bd23ff;
+    min-height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.encabezado {
+    position: relative;
+}
+
+
+.boton-menu {
+    width: 42px;
+    height: 42px;
+    background: white;
+    border: 2px solid #5555ff;
+    padding: 3px;
+    cursor: pointer;
+}
+
+.boton-menu img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+
+
+.menu-desplegable {
+    display: none;
+    position: fixed;
+    top: 123px;
+    bottom: 0;
+    right: 0;
+    width: 42%;
+    min-width: 180px;
+    background: #660491;
+    z-index: 100;
+    padding: 20px;
+    flex-direction: column;
+    gap: 25px;
+    overflow-y: auto;
+}
+
+.menu-desplegable.abierto {
+    display: flex;
+}
+
+
+.menu-desplegable.abierto {
+    display: flex;
+}
+
+.menu-desplegable button {
+    background: transparent;
+    border: none;
+    color: black;
+    font-size: 16px;
+    font-style: italic;
+    cursor: pointer;
+    padding: 10px;
+}
+
+
+.menu-desplegable button {
+    background: transparent;
+    border: none;
+    color: black;
+    font-size: 16px;
+    font-style: italic;
+    cursor: pointer;
+    padding: 15px;
+    width: 100%;
+    transition: background 0.2s ease;
+}
+
+.menu-desplegable button:hover {
+    background-color: #470264;
+    color: black;
+}
+
+
+
+
+.logo {
+    color: black;
+    font-size: 35px;
+    font-style: italic;
+}
+
+nav {
+    display: flex;
+    gap: 25px;
+}
+
+nav button {
+    background: #b50aff;
+    color: white;
+    border: none;
+    border-radius: 40px;
+    padding: 18px 30px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+nav button:hover {
+    background: #8500bd;
+}
+
+.pagina {
+    display: none;
+    padding: 50px;
+    min-height: 80vh;
+}
+
+.pagina.activa {
+    display: block;
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MELODIFY</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+
+    <header class="encabezado">
+
+        <div class="logo">♫ MELODIFY</div>
+
+        <nav class="navegacion">
+            <button onclick="mostrarPagina('inicio')">INICIO</button>
+            <button onclick="mostrarPagina('resumen')">RESUMEN</button>
+            <button onclick="mostrarPagina('descargar')">DESCARGAR</button>
+        </nav>
+
+
+        <button class="boton-menu" onclick="toggleMenu()" aria-label="Abrir menú">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXPaa6yGRkO7RiFaSK_Z0oUU_uOpabTrY7vyKWTVx04K7T-sNInAIYfYQs&s=10"
+                alt="Menú">
+        </button>
+
+
+        <div class="menu-desplegable" id="menuDesplegable">
+            <button onclick="mostrarPagina('inicio')">INICIO</button>
+            <button onclick="mostrarPagina('resumen')">RESUMEN</button>
+            <button onclick="mostrarPagina('tutoriales')">TUTORIALES</button>
+            <button onclick="mostrarPagina('descargar')">DESCARGAS</button>
+        </div>
+
+    </header>
+
+
+    <main>
+        <section id="inicio" class="pagina activa">
+            <h1>Bienvenido a MELODIFY
+            </h1>
+            <p>espacio en matenimiento.</p>
+        </section>
+
+        <section id="resumen" class="pagina">
+            <h1>Resumen</h1>
+            <p>Conoce más sobre MELODIFY.</p>
+        </section>
+
+        <section id="descargar" class="pagina">
+            <h1>Descargar</h1>
+            <p>Encuentra aquí las opciones de descarga.</p>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
